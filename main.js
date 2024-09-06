@@ -1,5 +1,5 @@
 // Initialize AOS
-AOS.init();
+// AOS.init();
 
 // You can also pass an optional settings object
 // below listed default settings
@@ -25,3 +25,21 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
+
+ // use a script tag or an external JS file
+ document.addEventListener("DOMContentLoaded", (event) => {
+    gsap.registerPlugin(ScrollTrigger)
+    // gsap code here!
+    gsap.to('.btn_contact_me', {
+        //要到哪個位置?
+        y: 200,
+        //放大
+        scale:2,
+        // 觸發點
+        scrollTrigger:{
+            trigger:'.introduction', //觸發對象
+            start: "top bottom",
+            scrub: 1,
+        },
+    });
+   });
