@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset end */
+
+/* import font */
+/* @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap'); */
+body{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Typography */
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 128px;
+    line-height: 192px;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.fs-1{
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.fs-2{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.fs-3{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.fs-4{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.color-w{
+    color: #FFFFFF;
+}
+
+.color-b{
+    color: #000000;
+}
+
+.color-g{
+    color: #00FFA3;
+    ;
+}
+
+.title-text{
+    font-size: 64px;
+    line-height: 96px;
+}
+
+/* CSS design */
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.ds-f{
+    display: flex;
+}
+
+.img{
+    display: block;
+}
+
+/* nav */
+.nav .container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* header */
+.header .container{
+    padding-top: 72px;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.photo{
+    margin-right: 24px;
+}
+
+.person{
+    flex-direction: column;
+}
+
+.header a{
+    text-decoration: none;
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.header a p{
+    padding-right: 4px;
+}
+
+/* section */
+.mb-36{
+    margin-bottom: 36px;
+}
+
+.mr-24{
+    margin-right: 24px;
+}
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+
+.ptb-160{
+    padding: 160px 0;
+}
+/* section_introduction */
+.introduction .content{
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+/* section_about me */
+.about_me .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-list{
+    width: 636px;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card{
+    width: calc(50% - 12px);
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.about_me .describe{
+    width: 526px;
+}
+/* section_contact */
+.contact_icon .container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.contact_icon a{
+    border-radius: 40px;
+    transition: 1s; /* 轉場效果 */
+}
+.contact_icon a:hover{
+    box-shadow: 0 0 16px 3px rgba(144, 148, 255, 0.9);
+}
+/* section_project */
+.my_projects .container{
+    flex-direction: column;
+}
+
+.my_projects .describe{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my_projects a{
+    text-decoration: none;
+    background-color: black;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.my_projects a p{
+    margin-right: 4px;
+}
+
+.my_projects .title-text{
+    margin-bottom: 16px;
+    margin-left: 550px; /* 除了寫死不知道如何讓他右邊留點空白 */
+}
+
+.detail_left{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* footer */
+footer p {
+    text-align: center;
+    padding: 40px 0;
+}
